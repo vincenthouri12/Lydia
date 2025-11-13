@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","17969","check that caroussel displayed","","2025-11-13","passed","2025-11-13","","","",""
+"","5359","check that user can set language to french","","2025-11-13","passed","2025-11-13","","","",""
+"","175807","check that user can open cresus section","","2025-11-13","passed","2025-11-13","","","",""
+"","8430","check that user can find lydia city page","","2025-11-13","passed","2025-11-13","","","",""
