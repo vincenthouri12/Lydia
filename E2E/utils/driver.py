@@ -5,7 +5,6 @@ class DriverFactory:
 
     driver = None
 
-    @staticmethod
     def start_driver():
         options = AppiumOptions()
         options.load_capabilities({

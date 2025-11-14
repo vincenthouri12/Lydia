@@ -1,5 +1,3 @@
-from appium import webdriver
-from appium.options.common.base import AppiumOptions
 from utils.driver import DriverFactory
 from pages.carousel import CarouselPage
 from pages.search_page import SearchPage

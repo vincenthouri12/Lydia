@@ -1,5 +1,9 @@
 # Lydia App Automation
 
+## Installer les requirement.txt
+
+### Sur un virtual env (plus facile) ou sur son ordinateur local
+
 ## Lancer les tests avec Gherkin
 
 ```bash

@@ -14,6 +14,7 @@ import time
 class CresusPage:
     PREVIEW_BTN = (By.ID, "org.wikipedia.alpha:id/link_preview_primary_button")
     CRESUS_TEXT = (By.XPATH, '(//android.widget.TextView[@text="Crésus"])[1]')
+    CRESUS_XPATH = '//android.view.View[@content-desc="Crésus roi de Lydie et dernier souverain de la dynastie des Mermnades (vers 596-Vers 546 av. J.-C.)"]'
 
     def __init__(self, driver, timeout=10):
         self.driver = driver
@@ -37,13 +38,12 @@ class CresusPage:
 
     def scroll_to_crésus_and_click(self):
 
-        CRESUS_XPATH = '//android.view.View[@content-desc="Crésus roi de Lydie et dernier souverain de la dynastie des Mermnades (vers 596-Vers 546 av. J.-C.)"]'
         MAX_SCROLLS = 40
         time.sleep(1) 
 
         for _ in range(MAX_SCROLLS):
             try:        
-                elem = self.driver.find_element(By.XPATH, CRESUS_XPATH)
+                elem = self.driver.find_element(By.XPATH, self.CRESUS_XPATH)
                 if elem.is_displayed():
                     elem.click()
                     print("Lien Crésus cliqué")
